@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ness Presso Café</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif; 
+      overflow-x: hidden;
+      background: linear-gradient(135deg, #3c2e28, #b08968, #d4a373);
+      position: relative;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Decorative fade circles */
+    body::before, body::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.1;
+      background: #fff;
+      z-index: 0;
+    }
+
+    body::before {
+      width: 400px;
+      height: 400px;
+      top: -100px;
+      left: -100px;
+    }
+
+    body::after {
+      width: 300px;
+      height: 300px;
+      bottom: -50px;
+      right: -50px;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 0 10px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    header img {
+      width: 120px; 
+      height: auto;
+      border-radius: 50%; 
+      border: 3px solid #B08968; 
+      transition: transform 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      margin-top: 10px;
+      font-size: 50px;
+      font-family: 'Dancing Script', cursive;
+      position: relative;
+      z-index: 1;
+    }
+
+    p {
+      text-align: center;
+      color: #fff;
+      font-size: 20px;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .gallery-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 20px;
+      padding: 40px 20px;
+      background-color: rgba(176, 137, 104, 0.85);
+      scroll-behavior: smooth;
+      position: relative;
+      z-index: 1;
+      border-radius: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .gallery-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    .item {
+      flex: 0 0 250px;
+      height: 250px;
+      background-color: #fff;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      scroll-snap-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .item img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 40%;
+      margin-bottom: 10px;
+    }
+
+    .item:hover {
+      transform: scale(1.04);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .item span {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    /* Back to Home button */
+    .back-home {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 12px 25px;
+      background-color: #B08968;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s, background-color 0.2s;
+      z-index: 10;
+    }
+
+    .back-home:hover {
+      transform: translateX(-50%) scale(1.05);
+      background-color: #d4a373;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="description.html">
+      <img src="logo.png" alt="Ness Presso Café Logo">
+    </a>
+  </header>
+
+  <h1>Menu</h1>
+  <p>Swipe left or right to browse categories!</p>
+
+  <div class="gallery-container" id="menuGallery">
+    <div class="item">
+      <a href="coffee.html"> 
+        <img src="coffee.jpg" alt="Coffee">
+      </a>
+      <span>Coffee</span>
+    </div>
+    <div class="item">
+      <a href="noncoffee.html"> 
+        <img src="non coffee.jpg" alt="Non Coffee">
+      </a>
+      <span>Non-Coffee</span>
+    </div>
+    <div class="item">
+      <a href="frappe.html"> 
+        <img src="frappe.jpg" alt="Frappe">
+      </a>
+      <span>Frappe</span>
+    </div>
+    <div class="item">
+      <a href="beverages.html"> 
+        <img src="beverage.jpg" alt="Beverages">
+      </a>
+      <span>Beverages</span>
+    </div>
+    <div class="item">
+      <a href="snacks.html"> 
+        <img src="snack.jpg" alt="Snacks">
+      </a>
+      <span>Snacks</span>
+    </div>
+    <div class="item">
+      <a href="pasta.html"> 
+        <img src="pasta.jpg" alt="Pasta">
+      </a>
+      <span>Pasta</span>
+    </div>
+    <div class="item">
+      <a href="desserts.html"> 
+        <img src="dessert.jpg" alt="Desserts">
+      </a>
+      <span>Desserts</span>
+    </div>
+    <div class="item">
+      <a href="ricemeals.html"> 
+        <img src="Rice meals.jpg" alt="Rice Meals">
+      </a>
+      <span>Rice Meals</span>
+    </div>
+    <div class="item">
+      <a href="noodles.html"> 
+        <img src="noodlesappetizer.png" alt="Noodles/Appetizer">
+      </a>
+      <span>Noodles/Appetizer</span>
+    </div>
+  </div>
+
+  <a class="back-home" href="index.html">← Back to Home</a>
+
+  <script>
+    const slider = document.getElementById('menuGallery');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+      isDown = true;
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener('mouseleave', () => isDown = false);
+    slider.addEventListener('mouseup', () => isDown = false);
+    slider.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      slider.scrollLeft = scrollLeft - walk;
+    });
+  </script>
+</body>
+</html>

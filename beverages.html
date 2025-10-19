@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ness Presso Café - Beverage Menu</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f5f0;
+      color: #3e2f23;
+    }
+
+    header {
+      background-color: #4b2c20;
+      color: #fff;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 28px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .menu-section {
+      max-width: 1000px;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      overflow: hidden;
+    }
+
+    .menu-header {
+      background: linear-gradient(120deg, #6bc5d2, #b2ebf2);
+      padding: 25px;
+      color: #fff;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 40px 50px;
+    }
+
+    .menu-card {
+      background-color: #f6f0e8;
+      border-radius: 15px;
+      text-align: center;
+      padding: 25px 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+
+    .menu-card h3 {
+      color: #3e2f23;
+      font-size: 20px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .menu-card p {
+      color: #6b4f3a;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #4b2c20;
+      color: #fff;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .btn-home {
+      display: inline-block;
+      background-color: #6bc5d2;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: 0.3s;
+      margin: 30px auto;
+      display: block;
+      width: fit-content;
+    }
+
+    .btn-home:hover {
+      background-color: #5aafb9;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    🍹 Ness Presso Café - Beverage Menu
+  </header>
+
+  <section class="menu-section">
+    <div class="menu-header">
+      BEVERAGE
+    </div>
+
+    <div class="menu-items">
+      <div class="menu-card"><h3>Ness Halo-halo (iCrave)</h3><p>₱100</p></div>
+      <div class="menu-card"><h3>Fruit Overload</h3><p>₱120</p></div>
+      <div class="menu-card"><h3>Mango Shake</h3><p>₱95</p></div>
+      <div class="menu-card"><h3>Cucumber Soda</h3><p>₱59</p></div>
+      <div class="menu-card"><h3>Green Apple Soda</h3><p>₱59</p></div>
+      <div class="menu-card"><h3>Strawberry Soda</h3><p>₱59</p></div>
+      <div class="menu-card"><h3>Lemon Soda</h3><p>₱50</p></div>
+      <div class="menu-card"><h3>Coke (in can)</h3><p>₱50</p></div>
+      <div class="menu-card"><h3>Sprite (in can)</h3><p>₱50</p></div>
+      <div class="menu-card"><h3>Bottled Water</h3><p>₱15</p></div>
+    </div>
+  </section>
+
+  <a href="nessmenu.html" class="btn-home">Back to Home</a>
+
+  <footer>
+    © 2025 Ness Presso Café | Refreshingly Yours 🍹
+  </footer>
+
+</body>
+</html>
+
